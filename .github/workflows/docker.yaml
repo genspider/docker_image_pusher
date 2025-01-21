@@ -2,6 +2,8 @@ name: Docker
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * WED'  # 每周三零点触发
   push:
     branches: [ main ]
 
